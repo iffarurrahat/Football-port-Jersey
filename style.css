@@ -1,0 +1,380 @@
+/* every google-font url */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header styles css */
+header{
+    background-image: url(images/football-bg.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar{
+    max-width: 1160px;
+    margin: auto;
+    padding: 25px 0px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu-list{
+    display: flex;
+}
+.menu-list li{
+    list-style: none;
+}
+.menu-list li a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 36px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+} 
+.menu-list li a:hover{
+    color: cyan;
+}
+.login{
+    display: flex;
+    align-items: center;
+    background: #E02C6D;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+.navbar .login a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navbar .login img{
+    width: 24px;
+    margin-right: 8px;
+}
+.icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.content-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.head-content h2{
+    color: #fff;
+    font-size: 64px;
+    margin-bottom: 28px;
+}
+.watch-btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    transition: .2s linear;
+}
+.watch-btn:hover{
+    background: none;
+    border: 2px solid #E02C6D;
+    color: #E02C6D;
+}
+.r-arrow{
+    margin-left: 8px;
+}
+.head-thumbnail img{
+    width: 556px;
+    transition: 0.2s linear;
+    overflow: hidden;
+}
+.head-thumbnail img:hover{
+    transform: scale(1.2);
+}
+/*player styles css*/
+.players{
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin: auto;
+    margin-top: 70px;
+}
+.player{
+    width: 330px;
+    box-shadow: 0 5px 15px rgb(15 10 10 / 10%);
+    padding: 15px;
+}
+.player img {
+    width: 300px;
+    height: 256px;
+}
+.palyer-details h3{
+    font-size: 28px;
+    margin: 16px 0 10px 0;
+    text-align: center;
+}
+.palyer-details p{
+    color: #6C6C6C;
+}
+/* highlights styles css */
+.highlights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 68px;
+    width: 1050px;
+    margin: auto;
+    margin-top: 165px;
+}
+.highlights-details h3{
+    font-size: 48px;
+}
+.highlights-details p{
+    margin-bottom: 24px;
+    color: #6C6C6C;
+}
+.highlights-videos video{
+    width: 567px;
+    height: 427px;
+}
+/* skilled styles css */
+.skilled {
+    height: 100vh;
+}
+.skilled h1 {
+    text-align: center;
+    font-size: 45px;
+    margin: 140px 0 20px 0;
+}
+.skilled p {
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+.skills-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+.skill {
+    position: relative;
+    margin-bottom: 30px;
+}
+.skill-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.skill-bar {
+    width: 100%;
+    background: rgb(236 236 236 / 60%);
+    height: 20px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+}
+.skill-fill {
+    background: blue;
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.skill-percent {
+     font-size: 20px;
+}
+.angel {
+    animation: angel 2s;
+    width: 50%;
+}
+.messi {
+    animation: messi 2s;
+    width: 80%;
+}
+.neymar {
+    animation: neymar 2s;
+    width: 70%;
+}
+.lison{
+    animation: lison 2s;
+    width: 70%;
+}
+.martinez{
+    animation: martinez 2s;
+    width: 95%;
+  }
+
+@keyframes angel {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes messi {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes neymar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes lison {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
+}
+@keyframes martinez {
+    from {
+        width: 0;
+    }
+    to {
+        width: 95%;
+    }
+}
+/*swiper-containe styles css*/
+.swiper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2196f3;
+    overflow: hidden;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+    background: #d1ebff;
+    border-radius: 10px;
+}
+.swiper-slide-active{
+    filter: blur(0);  
+    background: #fff;
+}
+.textimonialBox{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
+}
+.textimonialBox .quote{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity: 0.2;
+}
+.textimonialBox .details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.textimonialBox .details .imgBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.textimonialBox .details .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textimonialBox .details h3{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1em;
+}
+.textimonialBox .details h3 span{
+    font-size: 12px;
+    color: #666;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+/* footer styles css */
+.footer-area{
+    text-align: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.footer-logo img{
+    width: 300px;
+
+}
+.footer-icon a i{
+    color: #ddd;
+    width: 32px;
+    margin-bottom: 10px;
+    transition: 0.2s linear;
+}
+.footer-icon a i:hover{
+    color: cyan;
+}
+.footer-copy p{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
